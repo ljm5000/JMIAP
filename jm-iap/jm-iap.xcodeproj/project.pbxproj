@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF66799B24BD461000333544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66799A24BD461000333544 /* AppDelegate.m */; };
+		BF6679A124BD461000333544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6679A024BD461000333544 /* ViewController.m */; };
+		BF6679A424BD461000333544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6679A224BD461000333544 /* Main.storyboard */; };
+		BF6679A624BD461300333544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6679A524BD461300333544 /* Assets.xcassets */; };
+		BF6679A924BD461300333544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6679A724BD461300333544 /* LaunchScreen.storyboard */; };
+		BF6679AC24BD461300333544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6679AB24BD461300333544 /* main.m */; };
+		BF6679B624BD461400333544 /* jm_iapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6679B524BD461400333544 /* jm_iapTests.m */; };
+		BF6679C124BD461400333544 /* jm_iapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6679C024BD461400333544 /* jm_iapUITests.m */; };
+		BF6679D024BD4B0600333544 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6679CF24BD4B0600333544 /* StoreKit.framework */; };
+		BF6679D324BD8B2D00333544 /* JMPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6679D224BD8B2D00333544 /* JMPayManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF6679B224BD461400333544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF66798E24BD461000333544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF66799524BD461000333544;
+			remoteInfo = "jm-iap";
+		};
+		BF6679BD24BD461400333544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF66798E24BD461000333544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF66799524BD461000333544;
+			remoteInfo = "jm-iap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF66799624BD461000333544 /* jm-iap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jm-iap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF66799924BD461000333544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF66799A24BD461000333544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF66799F24BD461000333544 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF6679A024BD461000333544 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF6679A324BD461000333544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF6679A524BD461300333544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF6679A824BD461300333544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF6679AA24BD461300333544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6679AB24BD461300333544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF6679B124BD461400333544 /* jm-iapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jm-iapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6679B524BD461400333544 /* jm_iapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jm_iapTests.m; sourceTree = "<group>"; };
+		BF6679B724BD461400333544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6679BC24BD461400333544 /* jm-iapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jm-iapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6679C024BD461400333544 /* jm_iapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jm_iapUITests.m; sourceTree = "<group>"; };
+		BF6679C224BD461400333544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6679CF24BD4B0600333544 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BF6679D124BD8B2D00333544 /* JMPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMPayManager.h; sourceTree = "<group>"; };
+		BF6679D224BD8B2D00333544 /* JMPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMPayManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF66799324BD461000333544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6679D024BD4B0600333544 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679AE24BD461400333544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679B924BD461400333544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF66798D24BD461000333544 = {
+			isa = PBXGroup;
+			children = (
+				BF66799824BD461000333544 /* jm-iap */,
+				BF6679B424BD461400333544 /* jm-iapTests */,
+				BF6679BF24BD461400333544 /* jm-iapUITests */,
+				BF66799724BD461000333544 /* Products */,
+				BF6679CE24BD4B0600333544 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF66799724BD461000333544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF66799624BD461000333544 /* jm-iap.app */,
+				BF6679B124BD461400333544 /* jm-iapTests.xctest */,
+				BF6679BC24BD461400333544 /* jm-iapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF66799824BD461000333544 /* jm-iap */ = {
+			isa = PBXGroup;
+			children = (
+				BF66799924BD461000333544 /* AppDelegate.h */,
+				BF66799A24BD461000333544 /* AppDelegate.m */,
+				BF66799F24BD461000333544 /* ViewController.h */,
+				BF6679A024BD461000333544 /* ViewController.m */,
+				BF6679A224BD461000333544 /* Main.storyboard */,
+				BF6679A524BD461300333544 /* Assets.xcassets */,
+				BF6679A724BD461300333544 /* LaunchScreen.storyboard */,
+				BF6679AA24BD461300333544 /* Info.plist */,
+				BF6679AB24BD461300333544 /* main.m */,
+				BF6679D124BD8B2D00333544 /* JMPayManager.h */,
+				BF6679D224BD8B2D00333544 /* JMPayManager.m */,
+			);
+			path = "jm-iap";
+			sourceTree = "<group>";
+		};
+		BF6679B424BD461400333544 /* jm-iapTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF6679B524BD461400333544 /* jm_iapTests.m */,
+				BF6679B724BD461400333544 /* Info.plist */,
+			);
+			path = "jm-iapTests";
+			sourceTree = "<group>";
+		};
+		BF6679BF24BD461400333544 /* jm-iapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF6679C024BD461400333544 /* jm_iapUITests.m */,
+				BF6679C224BD461400333544 /* Info.plist */,
+			);
+			path = "jm-iapUITests";
+			sourceTree = "<group>";
+		};
+		BF6679CE24BD4B0600333544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6679CF24BD4B0600333544 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF66799524BD461000333544 /* jm-iap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6679C524BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iap" */;
+			buildPhases = (
+				BF66799224BD461000333544 /* Sources */,
+				BF66799324BD461000333544 /* Frameworks */,
+				BF66799424BD461000333544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jm-iap";
+			productName = "jm-iap";
+			productReference = BF66799624BD461000333544 /* jm-iap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF6679B024BD461400333544 /* jm-iapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6679C824BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iapTests" */;
+			buildPhases = (
+				BF6679AD24BD461400333544 /* Sources */,
+				BF6679AE24BD461400333544 /* Frameworks */,
+				BF6679AF24BD461400333544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF6679B324BD461400333544 /* PBXTargetDependency */,
+			);
+			name = "jm-iapTests";
+			productName = "jm-iapTests";
+			productReference = BF6679B124BD461400333544 /* jm-iapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF6679BB24BD461400333544 /* jm-iapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6679CB24BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iapUITests" */;
+			buildPhases = (
+				BF6679B824BD461400333544 /* Sources */,
+				BF6679B924BD461400333544 /* Frameworks */,
+				BF6679BA24BD461400333544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF6679BE24BD461400333544 /* PBXTargetDependency */,
+			);
+			name = "jm-iapUITests";
+			productName = "jm-iapUITests";
+			productReference = BF6679BC24BD461400333544 /* jm-iapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF66798E24BD461000333544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = com.jimmy.test;
+				TargetAttributes = {
+					BF66799524BD461000333544 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BF6679B024BD461400333544 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BF66799524BD461000333544;
+					};
+					BF6679BB24BD461400333544 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BF66799524BD461000333544;
+					};
+				};
+			};
+			buildConfigurationList = BF66799124BD461000333544 /* Build configuration list for PBXProject "jm-iap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF66798D24BD461000333544;
+			productRefGroup = BF66799724BD461000333544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF66799524BD461000333544 /* jm-iap */,
+				BF6679B024BD461400333544 /* jm-iapTests */,
+				BF6679BB24BD461400333544 /* jm-iapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF66799424BD461000333544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6679A924BD461300333544 /* LaunchScreen.storyboard in Resources */,
+				BF6679A624BD461300333544 /* Assets.xcassets in Resources */,
+				BF6679A424BD461000333544 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679AF24BD461400333544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679BA24BD461400333544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF66799224BD461000333544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6679A124BD461000333544 /* ViewController.m in Sources */,
+				BF6679D324BD8B2D00333544 /* JMPayManager.m in Sources */,
+				BF66799B24BD461000333544 /* AppDelegate.m in Sources */,
+				BF6679AC24BD461300333544 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679AD24BD461400333544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6679B624BD461400333544 /* jm_iapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6679B824BD461400333544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6679C124BD461400333544 /* jm_iapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF6679B324BD461400333544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF66799524BD461000333544 /* jm-iap */;
+			targetProxy = BF6679B224BD461400333544 /* PBXContainerItemProxy */;
+		};
+		BF6679BE24BD461400333544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF66799524BD461000333544 /* jm-iap */;
+			targetProxy = BF6679BD24BD461400333544 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF6679A224BD461000333544 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6679A324BD461000333544 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF6679A724BD461300333544 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6679A824BD461300333544 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF6679C324BD461400333544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF6679C424BD461400333544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF6679C624BD461400333544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWBFVMQ77U;
+				INFOPLIST_FILE = "jm-iap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.test1234;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF6679C724BD461400333544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWBFVMQ77U;
+				INFOPLIST_FILE = "jm-iap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.test1234;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF6679C924BD461400333544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "jm-iapTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.ksg.jm-iapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jm-iap.app/jm-iap";
+			};
+			name = Debug;
+		};
+		BF6679CA24BD461400333544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "jm-iapTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.ksg.jm-iapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jm-iap.app/jm-iap";
+			};
+			name = Release;
+		};
+		BF6679CC24BD461400333544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "jm-iapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.ksg.jm-iapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jm-iap";
+			};
+			name = Debug;
+		};
+		BF6679CD24BD461400333544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "jm-iapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.ksg.jm-iapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jm-iap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF66799124BD461000333544 /* Build configuration list for PBXProject "jm-iap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6679C324BD461400333544 /* Debug */,
+				BF6679C424BD461400333544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6679C524BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6679C624BD461400333544 /* Debug */,
+				BF6679C724BD461400333544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6679C824BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6679C924BD461400333544 /* Debug */,
+				BF6679CA24BD461400333544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6679CB24BD461400333544 /* Build configuration list for PBXNativeTarget "jm-iapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6679CC24BD461400333544 /* Debug */,
+				BF6679CD24BD461400333544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF66798E24BD461000333544 /* Project object */;
+}
