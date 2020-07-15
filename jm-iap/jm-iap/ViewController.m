@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    productId = @"com.jimmy.tes1.pay1";
+    productId = @"com.jimmy.tes1.pay2";
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:@"pay" forState:UIControlStateNormal];
     btn.frame = CGRectMake(0, 0, 100.0f, 100.0f);

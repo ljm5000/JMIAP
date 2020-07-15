@@ -53,7 +53,11 @@
         self.resultBlock(PAYMENT_BEGIN);
     }
 }
-#pragma mark - lazy load
+#pragma mark - delegate
+
+-(BOOL)paymentQueue:(SKPaymentQueue *)queue shouldAddStorePayment:(SKPayment *)payment forProduct:(SKProduct *)product{
+    return true;
+}
 
 -(void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{
     
@@ -101,8 +105,6 @@
     payment.quantity = self.count;
     [[SKPaymentQueue defaultQueue] addPayment:payment];
   
-    
-         
 }
 
 -(void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions{
