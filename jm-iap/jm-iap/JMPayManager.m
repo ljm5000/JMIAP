@@ -106,6 +106,7 @@
 }
 
 -(void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions{
+    NSLog(@"paymentQueue updatedTransactions");
     for (SKPaymentTransaction *transaction in transactions) {
         
         switch (transaction.transactionState) {
@@ -151,6 +152,7 @@
     
     NSString *productIdentifier = transaction.payment.productIdentifier;
     NSData *transactionReceiptData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]];
+    
     NSString *receipt = [transactionReceiptData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
     if ([productIdentifier length]>0) {
