@@ -6,6 +6,7 @@ App Store, In-App Purchase
 ### Step 1
 
 ```
+#import "JMPayManager.h"
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     ...
     
@@ -15,6 +16,14 @@ App Store, In-App Purchase
 }
 ```
 ### Step 2
+```
+#import "JMPayManager.h"
+[[JMPayManager shareInstance] setResultBlock:^(JMPAYMENT_STATUS status) {
+   
+    NSLog(@"%ld",status);
+}];
+
+```
 
 ### Step 3
 
