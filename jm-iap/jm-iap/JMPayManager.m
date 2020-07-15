@@ -111,9 +111,7 @@
         switch (transaction.transactionState) {
             case SKPaymentTransactionStatePurchased:  //交易完成
                 NSLog(@"transactionIdentifier = %@",transaction.transactionIdentifier);
-                if (self.resultBlock) {
-                       self.resultBlock(PAYMENT_COMPLETE);
-                   }
+              
                 [self completeTransaction:transaction];
                 break;
             case SKPaymentTransactionStateFailed:   {  //交易失败
@@ -158,7 +156,30 @@
     if ([productIdentifier length]>0) {
         NSLog(@"已经购买过该商品");
         //向自己的服务器验证购买凭证
-        NSLog(@"%@",receipt);
+        NSString * dir = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingFormat:@"/receipt"];
+        NSLog(@"%@",dir);
+        if (![[NSFileManager defaultManager] fileExistsAtPath:dir]) {
+            
+            [[NSFileManager defaultManager] createDirectoryAtPath:dir withIntermediateDirectories:NO attributes:nil error:nil];
+        }
+        
+        NSString* fileName = [dir stringByAppendingFormat:@"/rsp%.2f",[[NSDate date] timeIntervalSince1970]];
+        NSError * error;
+        [receipt writeToFile:fileName atomically:YES encoding:NSUTF8StringEncoding error:&error];
+        
+        if (error) {
+            NSLog(@"%@",error.localizedDescription);
+            if (self.resultBlock) {
+                self.resultBlock(PAYMENT_PURCHASING_FAILD);
+            }
+        }else{
+            NSLog(@"write file success");
+            if (self.resultBlock) {
+                self.resultBlock(PAYMENT_COMPLETE);
+            }
+        }
+        
+       // NSLog(@"%@",receipt);
     }
     
     //移除transaction购买操作
